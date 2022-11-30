@@ -10,8 +10,56 @@
     --font-weight-bold: 700;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: var(--font-weight-medium);
+    display: grid;
+    grid-template-areas: 
+                "header"
+                "main"
+                "footer";
+    grid-template-rows: 150px 1fr 310px;
+    grid-template-columns: 1fr;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.nav > li {
+    display: inline;
+}
+
+.nav-main {
+    flex: 1 1 auto;
+}
+
+/* Main */
+.hero {
+    display: flex;
+}
+
+.statistics {
+ background-color: #EFF1F7;
+}
+
+.statistics-details {
+    display: flex;
+}
+
+/* Footer */
+footer {
+    display: flex;
+}
+
+.footer-socials {
+    display: flex;
 }
