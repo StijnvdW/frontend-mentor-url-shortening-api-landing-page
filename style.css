@@ -57,7 +57,36 @@ header {
 
 /* Footer */
 footer {
+    color: var(--neutral-color-gray);
+    background-color: var(--neutral-color-dark-violet);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-areas: "logo cards socials";
+    grid-template-columns: 150px 1fr 150px;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.footer-cards {
+    grid-area: "cards";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-card .list {
     display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.footer-card > h3 {
+    color: white;
+}
+
+.footer-card > ul > li {
+    display: inline;
 }
 
 .footer-socials {
