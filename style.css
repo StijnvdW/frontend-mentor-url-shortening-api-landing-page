@@ -8,13 +8,21 @@
     --neutral-color-dark-violet: hsl(260, 8%, 14%);
     --font-weight-medium: 500;
     --font-weight-bold: 700;
+    --desktop-max-width: 1110px;
+}
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
     height: 100%;
 }
 
-body {
+.main-container {
+    height: 100%;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: var(--font-weight-medium);
@@ -24,7 +32,7 @@ body {
                 "header"
                 "main"
                 "footer";
-    grid-template-rows: 150px 1fr 310px;
+    grid-template-rows: auto 1fr 310px;
     grid-template-columns: 1fr;
 }
 
@@ -33,6 +41,10 @@ header {
     display: flex;
     align-items: center;
     height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1110px;
 }
 
 .nav > li {
@@ -44,6 +56,20 @@ header {
 }
 
 /* Main */
+.content-container {
+    display: grid;
+    grid-template-areas: 
+        "hero"
+        "statistics"
+        "boost";
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero {
     display: flex;
 }
