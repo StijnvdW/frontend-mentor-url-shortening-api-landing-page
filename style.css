@@ -101,7 +101,7 @@ html, body {
 header {
     display: flex;
     flex-direction: row;
-    margin: 24px 40px;
+    margin: 40px 24px;
 }
 
 .nav-main, .nav-account {
@@ -115,10 +115,30 @@ header {
 }
 
 /* HERO */
+.hero {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "copy";
+    grid-template-columns: minmax(250px, 1fr);
+    row-gap: 35px;
+}
+
 .hero__copy {
+    grid-area: copy;
     text-align: center;
 }
 
+.hero__img {
+    text-align: center;
+}
+
+.hero__img > img {
+    width: 511px;
+    height: 337px;
+}
+
+/* STATISTICS */
 .statistics-main {
     text-align: center;
 }
@@ -263,8 +283,14 @@ header {
         max-width: 1110px;
     }
 
+    /* HERO */
     .hero {
         display: flex;
+    }
+
+    .hero__img > img {
+        width: 733px;
+        height: 482px;
     }
 
     .statistics {
