@@ -129,6 +129,17 @@ header {
     text-align: center;
 }
 
+.hero__copy > p {
+    line-height: 30px;
+    font-size: 18px;
+    letter-spacing: .12px;
+    padding: 16px 0;
+}
+
+.hero__copy > button {
+    margin: 16px 0;
+}
+
 .hero__img {
     text-align: center;
 }
@@ -139,19 +150,96 @@ header {
 }
 
 /* STATISTICS */
+
+.statistics {
+    background-color: #EFF1F7;
+    padding: 80px 0;
+}
+
 .statistics-main {
     text-align: center;
 }
 
+.statistics-main > h2 {
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: -.7px;
+}
+
+.statistics-main > p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .11px;
+    padding: 16px 0;
+}
+
+.statistics-cards {
+    position: relative;
+    z-index: 1;
+}
+
 .statistics-card {
+    position: relative;
+    padding: 44px 0;
+}
+
+.statistics-card-logo-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.statistics-card-logo {
+    position: absolute;
+    margin-top: -44px;
+    background-color: var(--prim-color-dark-violet);
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics-card-copy {
     text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 32px;
+}
+
+.statistics-card-copy > h3 {
+    font-size: 22px;
+    padding-bottom: 12px;
+    padding-top: 33px;
+}
+
+.statistics-card-copy > p {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.statistics-card-connector {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics-card-connector-line {
+    width: 8px;
+    height: 100%;
+    background-color: var(--prim-color-cyan);
 }
 
 /* Footer*/
 .boost {
     text-align: center;
     background-color: var(--prim-color-dark-violet);
-    padding: 90px 35px;
+    padding: 90px 0px;
 }
 
 .footer {
@@ -291,11 +379,6 @@ header {
     .hero__img > img {
         width: 733px;
         height: 482px;
-    }
-
-    .statistics {
-    background-color: #EFF1F7;
-    height: 100%;
     }
 
     .statistics-details {
