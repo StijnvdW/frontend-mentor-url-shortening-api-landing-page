@@ -223,7 +223,7 @@ header {
 .statistics-card-connector {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
