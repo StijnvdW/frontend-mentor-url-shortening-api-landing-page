@@ -156,7 +156,7 @@ header {
 .hero__img {
     grid-area: image;
     text-align: center;
-    overflow: visible;
+    overflow: inherit;
 }
 
 .hero__img > img {
@@ -164,11 +164,40 @@ header {
     height: 337px;
 }
 
+/* SHORTEN */
+.shorten {
+    top: 90px;
+    position: relative;
+}
+
+.shorten-input {
+    background-color: var(--prim-color-dark-violet);
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+}
+
+.shorten-input-field {
+    color: var(--neutral-color-gray);
+    border-radius: 5px;
+    font-weight: var(--font-weight-bold);
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 16px;
+    height: 54px;
+}
+
+.shorten-input-button {
+    border-radius: 5px;
+}
+
 /* STATISTICS */
 
 .statistics {
     background-color: #EFF1F7;
-    padding: 80px 0;
+    padding: 160px 0;
 }
 
 .statistics-main {
@@ -411,11 +440,26 @@ header {
 
     .hero__img {
         max-width: 450px;
+        overflow: display;
     }
 
     .hero__img > img {
         width: 733px;
         height: 482px;
+    }
+
+    /* Shorten */
+    .shorten {
+        width: 100%;
+        top: 54px;
+    }
+
+    .shorten-input {
+        flex-direction: row;
+    }
+
+    .shorten-input-field {
+        flex: 1 0 auto;
     }
 
     /* Statistics */
