@@ -73,6 +73,19 @@ p {
     cursor: pointer;
 }
 
+.button-round-nav {
+    color: white;
+    font-weight: var(--font-weight-bold);
+    font-size: 15px;
+    line-height: 22px;
+
+    border: none;
+    background-color: var(--prim-color-cyan);
+    padding: 8px 22px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
 html, body {
     height: 100%;
 }
@@ -322,7 +335,8 @@ header {
 
     h2 {
         font-size: 40px;
-        letter-spacing: 1px;
+        letter-spacing: -1px;
+        line-height: 48px;
     }
     
     h3 {
@@ -357,10 +371,16 @@ header {
 
     .nav > li {
         display: inline;
+        padding-left: 32px;
+
+        color: var(--neutral-color-grayish-violet);
+        font-weight: bold;
+        font-size: 15px;
     }
 
     .nav-main {
         flex: 1 1 auto;
+        padding-left: 12px;
     }
 
     /* Main */
@@ -394,6 +414,12 @@ header {
 
     .statistics-main-copy {
         max-width: 550px;
+    }
+
+    .statistics-main-copy > p {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: .12px;
     }
 
     .statistics-cards {
@@ -430,6 +456,10 @@ header {
         padding: 57px 0;
     }
 
+    .boost > .container-max-width > button {
+        margin-top: 32px;
+    }
+
     .footer-container {
         padding: 72px 0;
         max-width: 1110px;
@@ -453,6 +483,7 @@ header {
     .footer-cards {
         grid-area: cards;
         display: grid;
+        gap: 80px;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -468,7 +499,7 @@ header {
 
     /* trying to vertically align h3 and social media logo's */
     .footer-card > h3 {
-        margin: -5px;
+        margin-top: -5px;
     }
 
     .footer-socials {
