@@ -160,13 +160,13 @@ header {
     text-align: center;
 }
 
-.statistics-main > h2 {
+.statistics-main-copy > h2 {
     font-size: 28px;
     line-height: 48px;
     letter-spacing: -.7px;
 }
 
-.statistics-main > p {
+.statistics-main-copy > p {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: .11px;
@@ -176,11 +176,15 @@ header {
 .statistics-cards {
     position: relative;
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .statistics-card {
     position: relative;
-    padding: 44px 0;
+    padding-top: 44px;
 }
 
 .statistics-card-logo-wrapper {
@@ -223,7 +227,7 @@ header {
 .statistics-card-connector {
     position: absolute;
     width: 100%;
-    height: 850px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,8 +385,44 @@ header {
         height: 482px;
     }
 
+    /* Statistics */
+
+    .statistics-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .statistics-main-copy {
+        max-width: 550px;
+    }
+
+    .statistics-cards {
+        position: relative;
+        z-index: 1;
+        flex-direction: row;
+        gap: 30px;
+        
+    }
+
+    .statistics-card:nth-child(3) {
+        padding-top: 88px;
+    }
+
+    .statistics-card:nth-child(4) {
+        padding-top: 132px;
+    }
+
     .statistics-details {
         display: flex;
+    }
+
+    .statistics-card-connector {
+        height: 100%;
+        width: 100%;
+    }
+    .statistics-card-connector-line {
+        width: 100%;
+        height: 8px;
     }
 
     /* Footer */
