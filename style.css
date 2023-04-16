@@ -405,11 +405,12 @@ header {
     }
 
     .hero__copy {
-        flex: 0 0 550px;
+        text-align: left;
+        flex: 1 0 560px;
     }
 
     .hero__img {
-        min-width: 268px;
+        max-width: 450px;
     }
 
     .hero__img > img {
