@@ -126,9 +126,8 @@ header {
 .nav-items {
     position: absolute;
     background-color: var(--prim-color-dark-violet);
-    width: 327px;
-    height: 383px;
     left: 24px;
+    right: 24px;
     top: 96px;
     display: flex;
     flex-direction: column;
